@@ -19,8 +19,7 @@
 } 
 
 
-.main-text{ 
-    color: #ffffff; 
+.main-text{  
     text-align: center; 
     font-size: 16px; 
     font-style: normal; 
@@ -28,8 +27,7 @@
 } 
 
 
-.main-text-p2{ 
-    color: #ffffff; 
+.main-text-p2{  
     position: fixed; 
     left: 100px; 
     top: 70px;  
