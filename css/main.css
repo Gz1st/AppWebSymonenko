@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
  
+.fon-div{
+    background-image: url(/img/porsche_911_gt2_rs_porsche_avtomobil_211863_1920x1080.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    margin: 0;
+}
 
 .fa-user{ 
 
@@ -21,27 +29,26 @@
 
 .main-text{  
     text-align: center; 
+    position: relative;
+    top: 5px;
     font-size: 16px; 
-    font-style: normal; 
+    word-spacing: 70%;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: normal; 
     font-family: "Michroma", sans-serif; 
 } 
 
-
-.main-text-p2{  
-    position: fixed; 
-    left: 100px; 
-    top: 70px;  
+.main-text-p2{
     font-size: 40px; 
-    word-spacing: 10px; 
-    font-weight: bold; 
-    font-style: normal; 
+    position: relative;
+    left: 150px;  
+    top: 70px;   
+    font-weight: bold;
+    word-spacing: 70%;
     font-family: "Michroma", sans-serif; 
-} 
-
-.background-image{
-    background-image: url(/img/porsche_911_gt2_rs_porsche_avtomobil_211863_1920x1080.jpg);
-    
-    background-position: center;      
-    background-attachment: fixed;    
-    background-size: cover;
 }
+
+
+
+
