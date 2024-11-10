@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
  
-.fon-div{
+.fon-div {
     background-image: url(/img/porsche_911_gt2_rs_porsche_avtomobil_211863_1920x1080.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    height: 100vh;
-    margin: 0;
+
+    background-size: cover; /* Покриває весь екран, зберігаючи пропорції зображення */
+    height: 100vh; /* Висота блоку на весь екран */
+    width: 100%; /* Ширина на весь екран */
+    margin: 0; /* Прибирає відступи */
+    overflow: hidden; /* Прибирає зайве прокручування */
 }
+
 
 .fa-user{ 
 
     font-size: 25px; 
+    color: aliceblue;
     position: absolute; 
     top: 50px;  
     left: 1450px;  
@@ -21,6 +26,7 @@
 
 .fa-bars{ 
     font-size: 25px; 
+    color: aliceblue;
     position: absolute; 
     top: 50px;  
     left: 50px;  
@@ -28,6 +34,7 @@
 
 
 .main-text{  
+    color: aliceblue;
     text-align: center; 
     position: relative;
     top: 5px;
@@ -40,10 +47,11 @@
 } 
 
 .main-text-p2{
+    color:aliceblue;
     font-size: 40px; 
     position: relative;
     left: 150px;  
-    top: 70px;   
+    top: 60px;   
     font-weight: bold;
     word-spacing: 70%;
     font-family: "Michroma", sans-serif; 
