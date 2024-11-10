@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+
+}
+
+
+.intro{
+max-height: 100vh;
+overflow: hidden;
+position: relative;
+}
+
+.intro::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.full-screen-video{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.intro-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+a {
+    text-decoration: none;  /* Прибирає підкреслення */
+    color: inherit;         /* Залишає колір тексту від батьківського елемента */
+}
+
+.rase-essence{
+
+    position: relative; 
+    top: 10px; 
+    left: auto;
+    margin: 0;
+    font-size: 17px;
+    color:rgb(255, 255, 255) ;
+    text-align: center;
+    font-family: "Michroma", sans-serif; 
+    text-decoration: none;
+  
+   
+}
+
+
+
+

@@ -1,6 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
+
+
+ /*----------------------------BUTTON USER-------------------------*/
+
+ .image-button {
+    position: absolute; /* Використовуйте absolute або fixed для точного позиціювання */
+    top: 30px; /* Відступ від верхнього краю сторінки */
+    left: 1400px; /* Відступ від лівого краю сторінки */
+
+    display: inline-block; /* Забезпечує роботу як кнопка */
+    width: 60px; /* Задає ширину кнопки */
+    height: 60px; /* Задає висоту кнопки */
+    border-radius: 50%; /* Робить кнопку круглою */
+    overflow: hidden; /* Прибирає зайве, якщо зображення більше за кнопку */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Додає тінь для об'єму */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Ефект при наведенні */
+}
+
+.image-button img {
+    width: 100%; /* Розтягує зображення на всю ширину кнопки */
+    height: 100%; /* Розтягує зображення на всю висоту кнопки */
+    object-fit: cover; /* Забезпечує збереження пропорцій і повне покриття кнопки */
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* Легке збільшення при наведенні */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Посилення тіні при наведенні */
+}
+
+.image-button:active {
+    transform: scale(0.95); /* Зменшення при натисканні */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Легка тінь при натисканні */
+}
+
+
+  /*------------------------END-------------------------------------*/
+
+
  
+
+  /*-------------------------BUTTON MENU---------------------------*/
+  .menu-button {
+    transform: scale(0.50); /* Зменшує зображення до 70% */
+    position: absolute; /* Використовуйте absolute або fixed для точного позиціювання */
+    top: 30px; /* Відступ від верхнього краю сторінки */
+    left: 30px; /* Відступ від лівого краю сторінки */
+
+    display: inline-block; /* Забезпечує роботу як кнопка */
+    width: 60px; /* Задає ширину кнопки */
+    height: 60px; /* Задає висоту кнопки */
+    border-radius: 10%; /* Робить кнопку круглою */
+    overflow: hidden; /* Прибирає зайве, якщо зображення більше за кнопку */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Ефект при наведенні */
+}
+
+.menu-button img {
+    width: 100%; /* Розтягує зображення на всю ширину кнопки */
+    height: 100%; /* Розтягує зображення на всю висоту кнопки */
+    object-fit: cover; /* Забезпечує збереження пропорцій і повне покриття кнопки */
+}
+
+.menu-button:hover {
+    transform: scale(0.60); /* Легке збільшення при наведенні */
+ 
+}
+
+.menu-button:active {
+    transform: scale(0.58); /* Зменшення при натисканні */
+   
+}
+   /*------------------------END------------------------------------*/
+
+
+
 .second-div{
     color: rgb(255, 255, 255);
     background-position: center;
@@ -12,6 +85,13 @@
     margin: 0; /* Прибирає відступи */
     overflow: hidden; /* Прибирає зайве прокручування */
 }
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+
+
+
 
 .first-div {
     background-image: url(/img/porsche_911_gt2_rs_porsche_avtomobil_211863_1920x1080.jpg);
@@ -25,15 +105,6 @@
     overflow: hidden; /* Прибирає зайве прокручування */
 }
 
-
-.fa-user{ 
-
-    font-size: 25px; 
-    color: aliceblue;
-    position: absolute; 
-    top: 50px;  
-    left: 1450px;  
-} 
 
 
 .fa-bars{ 
