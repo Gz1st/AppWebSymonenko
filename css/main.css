@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
  
-.fon-div {
+.second-div{
+    color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Покриває весь екран, зберігаючи пропорції зображення */
+    height: 100vh; /* Висота блоку на весь екран */
+    width: 100%; /* Ширина на весь екран */
+    min-height: 200vh;/*висота фону */
+    margin: 0; /* Прибирає відступи */
+    overflow: hidden; /* Прибирає зайве прокручування */
+}
+
+.first-div {
     background-image: url(/img/porsche_911_gt2_rs_porsche_avtomobil_211863_1920x1080.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +60,7 @@
 
 .main-text-p2{
     color:aliceblue;
-    font-size: 40px; 
+    font-size: 45px; 
     position: relative;
     left: 150px;  
     top: 60px;   
@@ -57,6 +69,38 @@
     font-family: "Michroma", sans-serif; 
 }
 
+/*------------------------------accessories--------------------------------*/
 
+.wheels{
+    position: relative;
+    border-radius: 10%; 
+    top: -399px;
+    left: -530px;
+    transform: scale(0.15);  
+}
+
+.tires{
+    position: relative;
+    border-radius: 10%; 
+    top: -1195px;
+    left: 200px;
+    transform: scale(0.32);
+}
+
+.tuning-parts{
+    position: relative;
+    border-radius: 10%; 
+    top: -1724px;
+    left: 500px;
+    transform: scale(0.3);
+}
+
+.sound{
+    position: relative;
+    border-radius: 10%; 
+    top: -2427px;
+    left: 600px;
+    transform: scale(0.192);
+}
 
 
