@@ -5,6 +5,7 @@
     <title>Race Essense - User</title>
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -13,19 +14,51 @@
 <div class="intro">
 
     <div class="video">
-       <video class="full-screen-video" src="/video/video_format.mp4" autoplay muted loop></video>
+       <video class="full-screen-video" src="/video/fon_video.mp4" autoplay muted loop></video>
     </div>
     <div class="intro-content">
 
         <div class="container">
             <a href="index.html" target="_self">
-                 <h1 class="rase-essence">Race Essence</h1>
+                <h1 class="rase-essence">Race Essence</h1>
             </a>
+            <!-----------------------------Form------------------------------------>
+                 
+            <div class="wrapper">
+
+
+                <form action="">
+                    <h1>Login</h1>
+    
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user bx-flip-horizontal' style='color:#ffffff'  ></i> 
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="password" required>
+                        <i class='bx bx-lock-open-alt bx-flip-horizontal' style='color:#ffffff' ></i>
+                    </div>
+                    <div class="remember">
+                        <label for=""><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn" >Login</button>
+
+                    <div class="register-link"></div>
+                    <p>Don't have an accaunt?<a href="#">Register</a> </p>
+
+
+                </form>
+        
+            </div>
 
         </div>
 
     </div>
-
+    
+    
 </div>
 
 </body>
