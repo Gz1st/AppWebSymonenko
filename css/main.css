@@ -5,6 +5,7 @@
  /*----------------------------BUTTON USER-------------------------*/
 
  .image-button {
+    transform: scale(1.2); /* Зменшує зображення до 70% */
     position: absolute; /* Використовуйте absolute або fixed для точного позиціювання */
     top: 30px; /* Відступ від верхнього краю сторінки */
     left: 1400px; /* Відступ від лівого краю сторінки */
@@ -14,8 +15,7 @@
     height: 60px; /* Задає висоту кнопки */
     border-radius: 50%; /* Робить кнопку круглою */
     overflow: hidden; /* Прибирає зайве, якщо зображення більше за кнопку */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Додає тінь для об'єму */
-    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Ефект при наведенні */
+    
 }
 
 .image-button img {
@@ -25,13 +25,14 @@
 }
 
 .image-button:hover {
-    transform: scale(1.1); /* Легке збільшення при наведенні */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4); /* Посилення тіні при наведенні */
+    transform: scale(1.4); /* Легке збільшення при наведенні */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Ефект при наведенні */
+   
 }
 
 .image-button:active {
-    transform: scale(0.95); /* Зменшення при натисканні */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Легка тінь при натисканні */
+    transform: scale(1.3); /* Зменшення при натисканні */
+    
 }
 
 
@@ -94,7 +95,7 @@
 
 
 .first-div {
-    background-image: url(../img/porsche.jpg);
+    background-image: url(../img/bmw_p.jpg);
     background-position: center;
     background-repeat: no-repeat;
 

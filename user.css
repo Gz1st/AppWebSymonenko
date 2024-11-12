@@ -80,7 +80,17 @@ a {
     font-family: "Michroma", sans-serif; 
 }
 
+.llll{
+    position: relative;
+    transform: translate(400px, 100px);
+    
+    
+
+}
+
+
 *body{
+    position: relative;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -91,12 +101,15 @@ a {
 
 .wrapper{
     width: 420px;
+   /*
     background: transparent;
     border: 2px solid rgb(255, 255, 255);
     backdrop-filter: blur(20px);
     color: #ffffff;
     border-radius: 10px;
     padding: 30px 40px;
+   */
+   color: #ffffff;
 }
 
 .wrapper h1{
