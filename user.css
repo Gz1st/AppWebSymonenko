@@ -1,75 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
 
-.video{
-    position: relative;
-    padding-bottom: 56.25%;
-    z-index: 1;
-
-}
-
-
-.intro{
-max-height: 100vh;
-overflow: hidden;
-position: relative;
-}
-
-.intro::after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-.full-screen-video{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
-.intro-content{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-}
-
-.container{
-    max-width: 1200px;
-    margin:  0 auto;
-}
-
 a {
     text-decoration: none;  /* Прибирає підкреслення */
     color: inherit;         /* Залишає колір тексту від батьківського елемента */
 }
 
-.rase-essence{
 
-    position: relative; 
-    top: 10px; 
-    left: auto;
-    margin: 0;
-    font-size: 17px;
-    color:rgb(255, 255, 255) ;
-    text-align: center;
+
+.text-race-essence {
     font-family: "Michroma", sans-serif; 
-    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px; /* Точний розмір тексту в пікселях */
+    z-index: 1;
+    word-spacing: 2px;
+  }
   
-   
-}
+
 
 /* ------------------------FORM-----------------------------------------*/
 
@@ -82,7 +34,7 @@ a {
 
 .llll{
     position: relative;
-    transform: translate(400px, 100px);
+    transform: translate(560px, 170px);
     
     
 
@@ -209,3 +161,45 @@ a {
     text-decoration: underline;
     color:rgb(255, 255, 255)
 }
+
+
+/*--------------------------------------------*/
+
+
+/* Контейнер для відео */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4); /* Напівпрозорий чорний фон для затемнення */
+  }
+  
+  /* Налаштування для самого iframe */
+  .video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120vw;           /* Збільшує ширину, щоб заповнити екран */
+    height: 120vh;          /* Збільшує висоту, щоб заповнити екран */
+    transform: translate(-50%, -50%);  /* Центрує відео */
+    object-fit: cover;
+    pointer-events: none;
+  }
+  
+  /* Опціонально: Псевдоелемент для затемнення поверх відео */
+  .video-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.70); /* Напівпрозорий чорний шар */
+    z-index: 0; /* Залишає відео за псевдоелементом */
+  }
+  
+    
