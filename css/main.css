@@ -75,17 +75,7 @@
 
 
 
-.second-div{
-    color: rgb(255, 255, 255);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Покриває весь екран, зберігаючи пропорції зображення */
-    height: 100vh; /* Висота блоку на весь екран */
-    width: 100%; /* Ширина на весь екран */
-    min-height: 200vh;/*висота фону */
-    margin: 0; /* Прибирає відступи */
-    overflow: hidden; /* Прибирає зайве прокручування */
-}
+
 
 
 
@@ -130,38 +120,88 @@
     font-weight: bold;
     word-spacing: 70%;
     font-family: "Michroma", sans-serif; 
+
 }
 
-/*------------------------------accessories--------------------------------*/
+/*------------------------------SECOND DIV --------------------------------*/
 
-.wheels{
-    position: relative;
-    border-radius: 10%; 
-    top: -399px;
-    left: -530px;
-    transform: scale(0.15);  
+.second-div {
+    background-color: white;          /* Білий фон для контейнера */
+    width: auto;                      /* Регульована ширина */
+    display: flex;                    /* Розташування елементів один за одним зліва направо */
+    justify-content: space-between;   /* Регулювання простору між елементами */
+    padding: 5%;                    /* Відступи всередині контейнера */
 }
 
-.tires{
-    position: relative;
-    border-radius: 10%; 
-    top: -1195px;
-    left: 200px;
-    transform: scale(0.32);
+.item {
+    text-align: center;               /* Вирівнювання тексту по центру зображення */
+    margin: 10px 50px;                   /* Регулювання відстані між елементами */
 }
 
-.tuning-parts{
-    position: relative;
-    border-radius: 10%; 
-    top: -1724px;
-    left: 500px;
-    transform: scale(0.3);
+.item img {
+    width: 220px;                     /* Розмір зображення */
+    height: auto;                     /* Автоматична висота, зберігає пропорції */
+    border-radius: 20px;              /* Округлість зображення */
+    margin-bottom: 5px;               /* Відстань між зображенням та текстом */
 }
 
-.sound{
-    position: relative;
-    border-radius: 10%; 
-    top: -2427px;
-    left: 600px;
-    transform: scale(0.192);
+.item p {
+    font-family: "Michroma", sans-serif; 
+    color: black;                     /* Колір тексту */
+    font-size: 14px;                  /* Розмір тексту */
+    margin: 0;                        /* Відсутність відступів */
 }
+
+
+
+/*-----------------------------Div#3--------------------------------*/
+
+
+
+.div_3 {
+    display: flex;
+    justify-content: center;         /* Вирівнювання форми по центру */
+    align-items: center;
+    width: 100%;                     /* Ширина контейнера */
+    height: 100vh;                   /* Висота контейнера на весь екран */
+    background-color: #ffffff;       /* Світло-сірий фон для контейнера */
+    position: relative;              /* Щоб дозволити абсолютне позиціонування елементів всередині */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;          /* Чорний обідок */
+    border-radius: 20px;             /* Закруглення */
+    padding: 5px 10px;               /* Внутрішній відступ */
+    width: 400px;                    /* Ширина форми */
+    background-color: transparent;   /* Прозорий фон форми */
+    position: absolute;              /* Абсолютне позиціонування для руху */
+    top: 50%;                        /* Початкові значення для центрування */
+    left: 50%;
+    transform: translate(-140%, -50%); /* Центрування форми по середині контейнера */
+}
+
+.search-icon {
+    font-size: 22px;                 /* Розмір іконки */
+    margin-right: 10px;              /* Відступ між іконкою і полем вводу */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #aaa;
+    width: 100%;
+    background-color: transparent;
+}
+
+.search-input::placeholder {
+    color: #cdcdcd;
+}
+
