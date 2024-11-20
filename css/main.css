@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); 
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
  /*----------------------------BUTTON USER-------------------------*/
@@ -154,7 +154,24 @@
 
 
 
-/*-----------------------------Div#3--------------------------------*/
+/*-------------------------------------Div#3--------------------------------*/
+
+.general-div-3 {
+ 
+    width: 100%; /* Забезпечує, що контейнер займає всю доступну ширину */
+    max-width: 100%; /* Не дозволяє контейнеру перевищувати ширину екрану */
+    margin: 0 auto; /* Центрує контейнер по горизонталі */
+    padding: 0 15px; /* Додає відступи з боків для уникнення вилазіння вмісту */
+    overflow-x: hidden; /* Відключає горизонтальний скрол */
+    box-sizing: border-box; /* Ураховує padding в розміри контейнера */
+
+  
+}
+
+body {
+    overflow-x: hidden; /* Відключає горизонтальний скрол на всьому сайті */
+}
+/*------------------------------------------------------------------------------*/
 
 
 
@@ -177,8 +194,8 @@
     width: 400px;                    /* Ширина форми */
     background-color: transparent;   /* Прозорий фон форми */
     position: absolute;              /* Абсолютне позиціонування для руху */
-    top: 50%;                        /* Початкові значення для центрування */
-    left: 50%;
+    top: 62%;                        /* Початкові значення для центрування */
+    left: 47%;
     transform: translate(-140%, -50%); /* Центрування форми по середині контейнера */
 }
 
@@ -203,5 +220,61 @@
 
 .search-input::placeholder {
     color: #cdcdcd;
+
 }
+
+/*-------------------------*/
+
+
+.text-div-3{
+    font-family: "Mulish", serif;
+    color:rgb(0, 0, 0);
+    font-size: 28px; 
+    position: relative;
+    left: 100px;  
+    top: -560px;   
+    font-weight: bold;
+    word-spacing: 70%;
+}
+
+.bottom-text{
+    font-weight:400;  /* Жирний текст */
+    font-size: 17px; /* Розмір шрифту */
+    position: relative;
+    left: 4px;  
+    top: -20px;   
+
+}
+
+/*-----------------------*/
+
+.car_back{
+    width: 70%; 
+    height: auto; 
+    transform: translateX(720px) translateY(-900px); 
+    filter: blur(2px); 
+}
+
+.car_side{
+    width: 118%; 
+    height: auto; 
+    transform: translateX(370px) translateY(-1620px); 
+
+}
+
+.whinter_car{
+    transform: translateY(-1750px);
+    width: 100%; /* Фото займає всю доступну ширину контейнера */
+    height: auto; /* Висота автоматично підлаштовується під ширину для збереження пропорцій */
+    display: block; /* Видаляє відступи під фото, які можуть бути через стандартний inline-block */
+    height: 100vh; /* Висота зображення дорівнює висоті екрану */
+    object-fit: cover; /* Заповнює весь контейнер, обрізаючи частину зображення, якщо потрібно */
+
+}
+
+
+
+
+
+
 
