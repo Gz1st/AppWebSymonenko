@@ -42,12 +42,62 @@
  
 
   /*-------------------------BUTTON MENU---------------------------*/
-  .menu-button {
-    transform: scale(0.50); /* Зменшує зображення до 70% */
-    position: absolute; /* Використовуйте absolute або fixed для точного позиціювання */
-    top: 30px; /* Відступ від верхнього краю сторінки */
-    left: 30px; /* Відступ від лівого краю сторінки */
 
+
+  .wrapper-x{
+    position: relative;
+    overflow-x: hidden;
+  }
+  .menu-x{
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    background-color: rgba(88, 88, 88, 0.34); /* Напівпрозорий чорний фон (rgba - перші три параметри - колір, останній - прозорість) */
+    backdrop-filter: blur(10px); /* Заблюрений фон за допомогою backdrop-filter */
+    -webkit-backdrop-filter: blur(10px); /* Для браузерів, що підтримують WebKit (наприклад, Safari) */
+    transition: 0.5s;
+    transform: translateX(-100%);
+  }
+
+    .menu_active{
+        transform: translateX(0%);
+    }
+ 
+  .menu-list{
+    position: relative;
+    left: -30px;  
+    top: -200px; 
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    flex-direction: column;
+
+  }
+  .menu-list a{
+    font-family: "Michroma", sans-serif; 
+    text-decoration: none;
+   font-weight: 50;
+   color: #ffffff;
+
+  }
+  .menu-button{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -90px;
+    top:23px;
+  }
+
+  /*--------------------------*/
+  .menu-button {
+    transform: scale(0.60); 
     display: inline-block; /* Забезпечує роботу як кнопка */
     width: 60px; /* Задає ширину кнопки */
     height: 60px; /* Задає висоту кнопки */
@@ -63,12 +113,12 @@
 }
 
 .menu-button:hover {
-    transform: scale(0.60); /* Легке збільшення при наведенні */
+    transform: scale(0.66); /* Легке збільшення при наведенні */
  
 }
 
 .menu-button:active {
-    transform: scale(0.58); /* Зменшення при натисканні */
+    transform: scale(0.60); /* Зменшення при натисканні */
    
 }
    /*------------------------END------------------------------------*/
@@ -99,7 +149,7 @@
 
 
 .main-text{  
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-align: center; 
     position: relative;
     top: 5px;
@@ -126,7 +176,7 @@
 /*------------------------------SECOND DIV --------------------------------*/
 
 .second-div {
-    background-color: white;          /* Білий фон для контейнера */
+    background-color: rgb(255, 255, 255);          /* Білий фон для контейнера */
     width: auto;                      /* Регульована ширина */
     display: flex;                    /* Розташування елементів один за одним зліва направо */
     justify-content: space-between;   /* Регулювання простору між елементами */
@@ -271,7 +321,6 @@ body {
     object-fit: cover; /* Заповнює весь контейнер, обрізаючи частину зображення, якщо потрібно */
 
 }
-
 
 
 
