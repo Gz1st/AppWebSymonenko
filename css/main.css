@@ -60,7 +60,7 @@
 
 .menu-list {
     position: relative;
-    left: -30px;
+    left: 0px;
     top: -200px;
     display: flex;
     justify-content: space-around;
@@ -73,7 +73,17 @@
     text-decoration: none;
     font-weight: 50;
     color: #ffffff;
+    transition: transform 0.1s ease; /* Smooth animation */
 }
+
+.menu-list a:hover {
+    transform: scale(1.08); /* Enlarge text by 20% when hovered */
+    color: #cecece; /* Change color to yellow when hovered */
+}
+.menu-list a:active {
+    transform: scale(1.02); /* Зменшення кнопки на 10% при натисканні */
+}
+
 
 .close-menu-btn {
     color: aliceblue;
