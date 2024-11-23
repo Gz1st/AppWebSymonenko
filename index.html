@@ -1,61 +1,48 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
 
-<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Essence</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
 
-    <head> 
-
-        <meta charset="utf-8"> 
-        <title>Race Essence</title> 
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="main.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-        <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.0/css/boxicons.min.css" rel="stylesheet">
-
-
-    </head> 
-
- 
-
-    <body> 
-
-        <header>
-        <!---------------1ST DIV------------------>
-         <div class="first-div">
-
-            <!-- ----------------BUTTON USER--------------->
-            <a href="user.html" target="_self" class="image-button">
-            <img src="img/user.png" alt="User Icon"> 
-            </a>
-         <!------------------------------------>
-         <div class="wrapper-x">
-            <div class="menu-x">
-                <a href="#" class="menu-button"> 
-                    <img src="img/menu.png" alt="MENU Icon">
-                </a>
-
-                <nav class="menu-list"> 
-                    <a href="#">MAIN</a>
-                    <a href="#">PRODUCTION</a>
-                    <a href="#">HISTORY</a>
-                </nav>
-
+<body>
+    <header>
+        <div class="first-div">
+            <!-- Бокове меню -->
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="#" class="close-menu-btn">
+                        <i class='bx bx-menu-alt-left'></i>
+                    </a>
+                    <nav class="menu-list">
+                        <a href="#">MAIN</a>
+                        <a href="#">PRODUCTION</a>
+                        <a href="#">HISTORY</a>
+                    </nav>
+                </div>
             </div>
-         </div>
-         <!-- --------------------------------------------->
-
-            <h1 class="main-text"><b>Race Essence</b></h1> 
-            <h2 class = "main-text-p2">BE READY TO RACE</h2>
-
+            <!-- menu-btn -->
+            <a href="#" class="menu-button">
+                <img src="img/menu.png" alt="MENU Icon">
+            </a>
+            <!-- user-btn -->
+            <a href="user.html" target="_self" class="image-button">
+                <img src="img/user.png" alt="User Icon">
+            </a>
+            <!-- text -->
+            <h1 class="main-text"><b>Race Essence</b></h1>
+            <h2 class="main-text-p2">BE READY TO RACE</h2>
         </div>
-        </header>
+    </header>
 
-<!----------------------------------->
-
-        <main>
-
-             <!-- --------------------------SECOND DIV---------------------------------- -->
-        
+    <main>
         <div class="second-div">
             <div class="item">
                 <img src="img/wheels.jpg" alt="Wheels">
@@ -74,8 +61,7 @@
                 <p>Sound</p>
             </div>
         </div>
-        <!-------------------------------Div#3---------------------------------->
-        
+
         <div class="general-div-3">
             <div class="div_3">
                 <div class="search-container">
@@ -85,45 +71,26 @@
                     <input type="text" placeholder="specify the car brand" class="search-input">
                 </div>
             </div>
-        
-            <!-------------------------->
-             
+
             <div class="text-div-3">
-                <p>CHOOSE A READY-MADE SETUP FOR YOUR SPORTS<br>
-                CAR FROM WELL-KNOWN TUNING PART BRANDS.</p>
-        
-                <p class="bottom-text">Here's how you can easily find tuning for your car. Enter the make <br>
-                and model, and browse the best offers that interest you the most.</p>
+                <p>CHOOSE A READY-MADE SETUP FOR YOUR SPORTS CAR FROM WELL-KNOWN TUNING PART BRANDS.</p>
+                <p class="bottom-text">Here's how you can easily find tuning for your car. Enter the make and model, and browse the best offers that interest you the most.</p>
             </div>
-            
+
             <div class="photo-div3">
                 <img class="car_back" src="img/car_back.png" alt="car.jpg">
                 <img class="car_side" src="img/car_side.png" alt="car.jpg">
             </div>
         </div>
 
+        <div class="div-4">
+            <img class="whinter_car" src="img/tect_p.png" alt="whinter">
+        </div>
+    </main>
 
-    <!----------------------DIV-#4---------------------------------------->
+    <footer>
+    </footer>
 
-    <div class = "div-4">
-        <img class = "whinter_car"  src="img/tect_p.png" alt="whinter">
-    </div>
+</body>
 
-        </main>
- <!---------------------------------->
-
-
-
-
-        <footer>
-
-
-        </footer>
-
-
-      
-    </body> 
-
-</html> 
-
- 
+</html>
