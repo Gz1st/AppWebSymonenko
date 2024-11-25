@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-x: hidden;
+  }
+
 /*----------------------------BUTTON USER-------------------------*/
+
 .image-button {
     transform: scale(1.2);
     position: absolute;
